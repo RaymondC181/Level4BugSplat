@@ -12,6 +12,7 @@ eleven = true;
 twelve = true; 
 thirteen = true; 
 fourteen = true; 
+fifteen = true; 
 
 
 function check(x)
@@ -155,6 +156,17 @@ function check(x)
         bug14.src ="img/squashed.png";
 
     }
+
+    if(x==15)
+    {
+        if(fifteen)
+        {
+            log();
+        }
+        fifteen = false; 
+        bug15.src ="img/squashed.png";
+
+    }
     
     
 }
@@ -175,13 +187,15 @@ function initialize()
     bug12 = document.getElementById("bug12");
     bug13 = document.getElementById("bug13");
     bug14 = document.getElementById("bug14");
+    bug15 = document.getElementById("bug15");
+
 
 }
 
 let arrayNonDefiant = ["No Please!","whyyyy", "Oww", "No more", "mercy!!", "please no", "AAAAAaa", "please stop", "gahhhh", "HELP"];
 let arrayDefiant = ["Haha", "it tickles", "whats the point?", "we ate all your food", "hehehe", "useless", "nice attempt"];
 
-counter = 14; 
+counter = 15; 
 function log()
 {
     if(counter >= 9)
@@ -219,6 +233,7 @@ function log()
         document.getElementById("mother").style.visibility = 'visible';
 
     }
+    console.log(counter);
 }
 shuffle(arrayNonDefiant);
 shuffle(arrayDefiant);
