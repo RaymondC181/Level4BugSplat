@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src = main.js></script>
-    <style></style>
+    <style>
+        #mother { visibility: hidden; }
+    </style>
 
 </head>
 <body onload = "initialize();">
@@ -25,6 +27,8 @@
     <img src = "img/bug12.png" width="100px" onclick = "check(12);" id = bug12>
     <img src = "img/bug13.png" width="100px" onclick = "check(13);" id = bug13>
     <img src = "img/bug14.png" width="100px" onclick = "check(14);" id = bug14>
+
+    <img id = "mother" src = "img/mother.png">
     <div>
         <p>Comments: </p>
         <p id = log>--</p>

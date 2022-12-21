@@ -206,6 +206,19 @@ function log()
 
     }
 
+    if (counter == 0)
+    {
+        document.getElementById("log").innerHTML += "<br/>"+"That’s it. Now Mamma’s angry!"; 
+
+        let images = document.getElementsByTagName("img");
+        let images_length = images.length-1;
+        for (let i = 0; i < images_length; i++) 
+        {
+            images[i].style.setProperty("display", "none", "important");
+        }
+        document.getElementById("mother").style.visibility = 'visible';
+
+    }
 }
 shuffle(arrayNonDefiant);
 shuffle(arrayDefiant);
